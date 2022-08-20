@@ -10,9 +10,10 @@ app = Flask(__name__)
 app.register_blueprint(main_blueprint)
 app.register_blueprint(loader_blueprint)
 
-# Обозначаю папку с изображениями
+
 @app.route("/uploads/<path:path>")
 def static_dir(path):
+    """Обозначаю папку с изображениями"""
     return send_from_directory("uploads", path)
 
 
