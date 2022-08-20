@@ -5,6 +5,7 @@ import logging
 
 loader_blueprint = Blueprint('loader_blueprint', __name__, template_folder='templates')
 
+logging.basicConfig(filename="basic.log", level=logging.INFO)
 
 @loader_blueprint.route('/post/')
 def post_form():
@@ -22,6 +23,7 @@ def new_post():
     filename = picture.filename
 
     if filename.lower().split('.')[-1] not in ['jpeg', 'png', 'jpg']:
+        logging.info("Загруженный файл не картинка")
         return 'Неверное расширение файла'
 
     picture.save(f"./uploads/{filename}")
@@ -30,8 +32,10 @@ def new_post():
     try:
         add_post_json(post_dict)
     except FileNotFoundError:
+        logging.info("Ошибка загрузки файла")
         return 'Файл не найден'
     except JSONDecodeError:
+        logging.info("Ошибка загрузки файла")
         return 'Невалидный файл'
 
     return render_template('post_uploaded.html', pic=pic_path, content=content)
