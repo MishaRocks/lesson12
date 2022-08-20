@@ -7,16 +7,20 @@ main_blueprint = Blueprint('main_blueprint', __name__, template_folder='template
 
 logging.basicConfig(filename="basic.log", level=logging.INFO)
 
+
+# публикация фаормы поиска
 @main_blueprint.route('/')
 def main_page():
     return render_template('index.html')
 
 
+# реализация поиска
 @main_blueprint.route('/search/')
 def search_page():
     logging.info("Выполняется поиск")
     s = request.args.get('s').lower()
     posts_found = []
+    # проверка файла json
     try:
         for i in open_file():
             if s in i["content"].lower():
