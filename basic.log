@@ -1,0 +1,33 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2022 02:07:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2022 02:07:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2022 02:07:34] "GET /search/?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2022 02:07:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2022 02:07:34] "[36mGET /uploads/Атмосфера.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2022 02:07:34] "[33mGET /Неверное%20расширение%20файла HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2022 02:07:34] "[36mGET /uploads/372826-sepik.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2022 02:07:34] "GET /uploads/maxresdefault4.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2022 02:07:34] "[33mGET /uploads/2015-05-28%2014-18-52.JPG HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2022 02:07:34] "[36mGET /uploads/zvezdy-pulsar-sverhnovaya.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2022 02:07:34] "[36mGET /uploads/26_2620_oboi_domik_v_osennem_lesu_2560x1600.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2022 02:07:34] "[36mGET /uploads/kosmicheskaya-nevesomost-dorozhka-zvezdy-vselennaya-galaktika-kosmicheskoe-prostranstvo-tumannost.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2022 02:07:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2022 02:07:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2022 02:07:45] "GET /post/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2022 02:07:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2022 02:08:01] "POST /post/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2022 02:08:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2022 02:08:01] "GET /uploads/26_2620_oboi_domik_v_osennem_lesu_2560x1600.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2022 02:08:04] "GET /post/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2022 02:08:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2022 02:08:06] "POST /post/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2022 02:08:09] "GET /post/ HTTP/1.1" 200 -
